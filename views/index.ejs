@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>What</title>
+
+
+    <% include head_stuff.ejs %>
+
+
+</head>
+
+<body>
+
+    <div class="vignette"></div>
+    <h1 id='h'>Allow the browser to use your microphone..</h1>
+
+
+    <div id='option'>
+        <a name="" id="freeze_button" class="btn btn-light" onclick="freezeBtn(event)">FREEZE</a>
+        <a name="" id="clear_button" class="btn btn-light" onclick="clearBtn(event)">CLEAR</a>
+        <select id="select_language" onchange="updateCountry()"></select>
+
+        <select id="select_dialect" onchange="updateLang()"></select>
+
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
