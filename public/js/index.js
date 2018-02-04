@@ -113,7 +113,6 @@ var langs = [
 var talktres = 0;
 var normtres = 0;
 var final_transcript = '';
-var start_timestamp;
 var recognizing = false;
 var freeze = false;
 window.onload = function () {
@@ -206,7 +205,6 @@ function freezeBtn(event) {
     } else {
         freeze = false;
         startRecog();
-        start_timestamp = event.timeStamp;
     }
 
 }
